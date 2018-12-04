@@ -9,3 +9,20 @@
     background: linear-gradient(rgb(121, 28, 104),rgb(148, 28, 30));
     flex: 2;
 }
+
+.list-item-container:hover div{
+    flex:1;
+}
+
+.list-item-container p{
+    color: #fff;
+    font-size: 1em;
+  }
+  
+  .rank-text{
+    font-weight: bold;
+  }
+
+  .list-item-expand{
+      flex: 0;
+  }
