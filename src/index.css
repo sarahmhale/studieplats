@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
@@ -13,12 +14,3 @@ code {
     monospace;
 }
 
-.list-container{
-  height: 50vh;
-  width: 100vw;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-}
