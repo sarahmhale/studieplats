@@ -21,11 +21,11 @@ class App extends Component {
       <div className="App">    
           <div className="list-container">  
           <ListItem>
-            <Sensor/>
+            <Sensor id="a"/>
           </ListItem>
 
           <ListItem>
-            <Sensor/>
+            <Sensor id="b"/>
           </ListItem>
         </div>  
       </div>
