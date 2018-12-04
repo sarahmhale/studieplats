@@ -5,7 +5,7 @@ import Sensor from './SensorData.js';
 
 class App extends Component {
 
-  
+
   render() {
     return (
       <div className="App">
@@ -21,7 +21,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
           </a>
-          <Sensor/>
+          <Sensor id="a" />
 
         </header>
       </div>
