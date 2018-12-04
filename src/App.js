@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ZonesList from './ZonesList.js';
+import ZonesList from './screen/Zones.js';
 
 class App extends Component {
 

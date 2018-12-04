@@ -14,12 +14,3 @@ code {
     monospace;
 }
 
-.list-container{
-  height: 50vh;
-  width: 100vw;
-  display: flex;
-  background-color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-}
