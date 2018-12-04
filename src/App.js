@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Sensor from './SensorData.js';
 
 class App extends Component {
+
+  
   render() {
     return (
       <div className="App">
@@ -17,8 +20,9 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
           </a>
+          <Sensor/>
+
         </header>
       </div>
     );
