@@ -2,7 +2,7 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import React from 'react';
 
-const Sensor = ({ data: { loading, error, sensor } }) => {
+const Zone = ({ data: { loading, error, zone } }) => {
   if (loading) {
     return <p>Loading</p>;
   } if (error) {
@@ -11,7 +11,7 @@ const Sensor = ({ data: { loading, error, sensor } }) => {
   } else {
     return (
       <div>
-        <p>{sensor.time}</p>
+        <p>{zone.level}</p>
       </div>
     );
   }
@@ -19,8 +19,8 @@ const Sensor = ({ data: { loading, error, sensor } }) => {
 
 export default graphql(gql`
   query sensor {
-    sensor {
-      time
+    zone {
+      level
     }
   }
-`)(Sensor);
+`)(Zone);

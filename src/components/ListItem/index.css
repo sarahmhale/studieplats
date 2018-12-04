@@ -1,0 +1,11 @@
+.list-item-container{
+    background: linear-gradient(#AF2896,#AF2123);
+    border: 1px #fff solid;
+    flex: 1;
+    transition: 1s;
+}
+
+.list-item-container:hover{
+    background: linear-gradient(rgb(121, 28, 104),rgb(148, 28, 30));
+    flex: 2;
+}
