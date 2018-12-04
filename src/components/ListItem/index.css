@@ -1,17 +1,20 @@
 .list-item-container{
     background: linear-gradient(#AF2896,#AF2123);
-    border: 1px #fff solid;
     flex: 1;
     transition: 1s;
+    flex-direction: 'column';
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .list-item-container:hover{
     background: linear-gradient(rgb(121, 28, 104),rgb(148, 28, 30));
-    flex: 2;
+    flex: 1;
 }
 
 .list-item-container:hover div{
-    flex:1;
+    height: 10vh;
+    font-size: 1em;
 }
 
 .list-item-container p{
@@ -24,5 +27,9 @@
   }
 
   .list-item-expand{
-      flex: 0;
+      height: 0vh;
+      width: 100%;
+      font-size: 0em;
+      background: linear-gradient(rgb(121, 28, 104),rgb(148, 28, 30));
+      transition: 1s;
   }
