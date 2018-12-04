@@ -16,7 +16,6 @@ code {
 .list-container{
   height: 50vh;
   width: 100vw;
-  background-color: #61dafb;
   display: flex;
   flex-direction: column;
   justify-content: center;

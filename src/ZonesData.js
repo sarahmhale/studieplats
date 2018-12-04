@@ -2,21 +2,31 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import React from 'react';
 import ListItem from './components/ListItem/ListItem.js';
+import BestMatch from './components/BestMatch/BestMatch'
 import './index.css';
 
-const Sensor = ({ data: { loading, error, zones } }) => {
+const Zones = ({ data: { loading, error, zones } }) => {
   if (loading) {
     return <p>Loading</p>;
   } if (error) {
-    console.log(error);
     return <p>Error</p>
   } else {
-    console.log(zones)
     return (
-      <div className="list-container">  
-        {zones.map((zone, index) => {
-          return <ListItem zone={zone} index={index}/>;
-        })}
+      <div className="list-container">
+        <BestMatch zone={zones[0]} />
+        <div>
+          {zones.map((zone, index) => {
+            if (index === 0) {
+              return <div key={index} />;
+            } else {
+              return <ListItem
+                zone={zone}
+                key={index}
+                index={index}
+              />;
+            }
+          })}
+        </div>
       </div>
     );
   }
@@ -31,4 +41,4 @@ export default graphql(gql`
     }
   }
   `
-)(Sensor);
+)(Zones);

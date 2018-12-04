@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Sensor from './ZonesData.js';
+import Zones from './ZonesData.js';
 
 class App extends Component {
 
@@ -17,8 +17,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">    
-        <Sensor/>
+      <div className="App">
+        <Zones />
       </div>
     );
   }
