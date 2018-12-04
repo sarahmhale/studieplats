@@ -1,10 +1,10 @@
 .list-item-container{
     background: linear-gradient(#AF2896,#AF2123);
-    border: 1px #fff solid;
     flex: 1;
     transition: 1s;
     flex-direction: 'column';
-    justify-content: 'space-between';
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .list-item-container:hover{
