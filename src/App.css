@@ -7,6 +7,23 @@
   justify-content: center;
 }
 
+.best-image{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.image-cover{
+  height: 0px;
+  width: 0px;
+  border: 100px solid transparent; 
+  border-right-color: rgba(0,0,0,0.5);
+  border-left: 0; 
+  border-bottom: 0; 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
