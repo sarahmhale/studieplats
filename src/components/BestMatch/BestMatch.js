@@ -14,18 +14,18 @@ export default class ListItem extends Component {
         }
         return stars;
     }
+    //<img src={logo} className="best-image" alt=''/>
 
     render() {
 
         return (
             <div className="best-container">
                 {this.createStars()}
-                <h1>Största chans för plats {'\u2728'} </h1>
-                <p>{this.props.zone.house}huset - Plan {this.props.zone.floor}</p>
-                <img src={logo} className="best-image" alt=''/>
+                <h3>Most seats available at</h3>
+                <h1>{this.props.zone.house}huset</h1>
+                <h2>Floor {this.props.zone.floor}</h2>
                 <div className="location-button" alt=''>
-                    <p>Ta mig hit</p>
-                    <img src={plats} alt="" className="location-image"/>
+                    <p>Show me</p>
                 </div>
                 <div className="image-cover"/>
             </div>

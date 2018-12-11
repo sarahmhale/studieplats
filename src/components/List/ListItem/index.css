@@ -1,6 +1,5 @@
 .list-item-container{
     background: #47A897;
-    flex: 1;
     transition: 1s;
     display: flex;
     flex-direction: 'column';

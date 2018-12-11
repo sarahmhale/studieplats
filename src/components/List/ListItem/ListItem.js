@@ -11,7 +11,6 @@ export default class ListItem extends Component {
       <div className="list-item-container">
         <div className="title-container">
           <p>{this.props.zone.house}huset - Plan {this.props.zone.floor}</p>
-          <img src={plats} className="location-image-small" alt=''/>
         </div>
       </div>
     );
