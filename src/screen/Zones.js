@@ -24,7 +24,7 @@ export default graphql(gql`
   query zones{
     zones {
       house,
-      level,
+      floor,
       level,
     }
   }

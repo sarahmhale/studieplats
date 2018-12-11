@@ -3,5 +3,6 @@
   width: 100vw;
   flex-direction: row;
   padding: 0px;
-  background-color: #145386;
+  background-color: #01122C;
+  overflow: hidden;
 }

@@ -6,9 +6,9 @@
 
 .location-button{
     position: relative;
-    background-color: #c6c6c6;
+    background-color: #9A4A81;
     z-index: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 5vw auto;
     width: 50vw;
     border-radius: 6px;
     justify-content: space-between;
@@ -27,6 +27,7 @@
     flex: 3;
     font-size: 1em;
     margin-left: 5%;
+    color: #fff;
 }
 
 .location-image{
@@ -40,20 +41,21 @@
     flex: 1;
     align-content: center;
     justify-content: center;
-    background-color: blue;
-    background: linear-gradient(270deg,#145386,  #22A38D, #9A4A81);
+    background-color: #145386;
+    background: linear-gradient(0deg, rgba(0, 204, 141, 0.5), rgba(1, 18, 44, 1));
     text-align: center;
-    animation: wave 12s infinite alternate;
-    -webkit-animation: wave 12s infinite alternate;
-    -moz-animation: wave 12s infinite alternate;
-    background-size: 400% 400%;
+    animation: wave 12s infinite;
+    -webkit-animation: wave 12s infinite;
+    -moz-animation: wave 12s infinite;
+    background-size: 100% 100%;
     top: 0vh;
+    color: #fff;
 }
 
 @keyframes wave{
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
 }
 
 @-webkit-keyframes wave {
@@ -71,11 +73,11 @@
 .image-cover{
     height: 0px;
     width: 0px;
-    border: 100vw solid transparent; 
-    border-right:100vw solid #6F6F6F;
+    border: 0vw solid transparent; 
+    border-right:100vw solid #145386;
     border-left: 0; 
     border-bottom: 0; 
-    border-top: 10vw solid transparent;
-    margin-top: -10vw; 
+    border-top: 25vw solid transparent;
+    margin-top: -25vw; 
     z-index: 1;
 }

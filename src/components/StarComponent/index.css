@@ -1,0 +1,7 @@
+.star-container{
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.5);
+    z-index: 0;
+    position: absolute;
+}

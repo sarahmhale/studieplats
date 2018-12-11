@@ -1,12 +1,12 @@
 .list-item-container{
-    background: #c4c4c4;
+    background: #47A897;
     flex: 1;
     transition: 1s;
     display: flex;
     flex-direction: 'column';
     margin: 5vh 5vh 0vh 5vh;
     border-radius: 6px;
-    color: #000;
+    color: #fff;
 }
 
 .list-item-container:hover{
