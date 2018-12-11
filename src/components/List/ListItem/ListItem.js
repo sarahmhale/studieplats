@@ -10,10 +10,6 @@ export default class ListItem extends Component {
           <p>{this.props.zone.house}huset - Plan {this.props.zone.level}</p>
           <img src={plats} className="location-image-small" alt=''/>
         </div>
-
-        <div className="list-item-expand">
-          <p>{this.props.zone.house} {this.props.zone.level}</p>
-        </div>
       </div>
     );
   }

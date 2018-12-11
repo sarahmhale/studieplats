@@ -7,10 +7,13 @@ export default class ListItem extends Component {
     render() {
         return (
             <div className="best-container">
-                <h1>Största chans för plats</h1>
+                <h1>Största chans för plats {'\u2728'} </h1>
                 <p>{this.props.zone.house}huset - Plan {this.props.zone.level}</p>
                 <img src={logo} className="best-image" alt=''/>
-                <img src={plats} className="location-image" alt=''/>
+                <div className="location-button" alt=''>
+                    <p>Ta mig hit</p>
+                    <img src={plats} alt="" className="location-image"/>
+                </div>
                 <div className="image-cover"/>
             </div>
         );

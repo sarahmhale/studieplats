@@ -4,25 +4,68 @@
     position: relative;
 }
 
-.location-image{
-    height: 25vw;
-    width: 25vw;
+.location-button{
     position: relative;
-    z-index: 2;
-    display: block;
+    background-color: #c6c6c6;
+    z-index: 0;
     margin: 0 auto 0 auto;
+    width: 50vw;
+    border-radius: 6px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: 'row';
+    flex-wrap: nowrap;
+    transition: 1s;
+}
+
+.location-button:hover{
+    background: #e1e1e1;
+}
+
+.location-button p{
+    flex: 3;
+    font-size: 1em;
+    margin-left: 5%;
+}
+
+.location-image{
+    flex: 1;
+    justify-self: right;
+    margin: auto 5% auto auto;
+    height: 75%;
 }
 
 .best-container{
     flex: 1;
-    background-color: #fff;
     align-content: center;
     justify-content: center;
+    background-color: blue;
+    background: linear-gradient(270deg,#145386,  #22A38D, #9A4A81);
     text-align: center;
+    animation: wave 12s infinite alternate;
+    -webkit-animation: wave 12s infinite alternate;
+    -moz-animation: wave 12s infinite alternate;
+    background-size: 400% 400%;
+    top: 0vh;
 }
 
-.best-container p h1{
-    margin: 5vh auto 0 auto;
+@keyframes wave{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-webkit-keyframes wave {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes wave {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 .image-cover{
@@ -34,6 +77,5 @@
     border-bottom: 0; 
     border-top: 10vw solid transparent;
     margin-top: -10vw; 
-    position: absolute;
     z-index: 1;
 }
