@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import './index.css';
-import logo from '../../Diagram.svg';
-import plats from '../../Plats.png';
 import Star from '../StarComponent/Star.js';
 
 export default class ListItem extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            style:{},
+        }
+    }
 
     createStars = () => {
         let stars = []
@@ -14,7 +19,10 @@ export default class ListItem extends Component {
         }
         return stars;
     }
-    //<img src={logo} className="best-image" alt=''/>
+
+    expand(){
+        
+    }
 
     render() {
 

@@ -4,5 +4,5 @@
   flex-direction: row;
   padding: 0px;
   background-color: #01122C;
-  overflow: hidden;
+  overflow-x: hidden;
 }
