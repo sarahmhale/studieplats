@@ -1,3 +1,39 @@
-.list-item-container{
+.best-image{
+    height: 50vw;
+    width: 50vw;
+    position: relative;
+}
+
+.location-image{
+    height: 25vw;
+    width: 25vw;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.best-container{
     flex: 1;
+    background-color: #fff;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.best-container p h1{
+    margin: 5vh auto 0 auto;
+}
+
+.image-cover{
+    height: 0px;
+    width: 0px;
+    border: 100vw solid transparent; 
+    border-right:100vw solid #6F6F6F;
+    border-left: 0; 
+    border-bottom: 0; 
+    border-top: 10vw solid transparent;
+    margin-top: -10vw; 
+    position: absolute;
+    z-index: 1;
 }

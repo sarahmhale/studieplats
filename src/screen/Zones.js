@@ -12,7 +12,7 @@ const Zones = ({ data: { loading, error, zones } }) => {
         return <p>Error</p>
     } else {
         return (
-            <div className="list-container">
+            <div>
                 <BestMatch zone={zones[0]} />
                 <ZoneList zones={zones} />
             </div>

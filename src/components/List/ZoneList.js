@@ -6,7 +6,7 @@ export default class ZoneList extends Component {
     render() {
         console.log(this.props)
         return (
-            <div>
+            <div className="list-container">
                 {this.props.zones.map((zone, index) => {
                     if (index === 0) {
                         return <div key={index} />;

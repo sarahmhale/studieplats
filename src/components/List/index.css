@@ -1,10 +1,9 @@
 .list-container{
-    height: 50vh;
-    width: 100vw;
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-  }
-  
+  flex: 2;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: #6F6F6F;
+}  
