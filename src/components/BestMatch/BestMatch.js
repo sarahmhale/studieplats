@@ -6,10 +6,10 @@ import Popup from "reactjs-popup";
 
 export default class ListItem extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            style:{},
+            style: {},
         }
     }
 
@@ -17,13 +17,36 @@ export default class ListItem extends Component {
         let stars = []
 
         for (let j = 0; j < 50; j++) {
-            stars.push(<Star/>)
+            stars.push(<Star />)
         }
         return stars;
     }
-    
-    render() {
 
+    expand() {
+
+    }
+
+    level(level) {
+        console.log(level)
+        switch (level) {
+            case 1:
+                return (<div><p>Really easy to find a seat</p></div>)
+                break
+            case 2:
+                return (<div><p>Easy to find a seat</p></div>)
+                break;
+            case 3:
+                return (<div><p>Hard to find a seat</p></div>)
+                break;
+            case 4:
+                return (<div><p>Really hard to find a seat</p></div>)
+                break;
+            default:
+
+        }
+    }
+
+    render() {
         return (
             <div className="best-container">
                 {this.createStars()}
@@ -33,7 +56,7 @@ export default class ListItem extends Component {
                     <h1>{this.props.zone.house}huset</h1>
                     <h2>Floor {this.props.zone.floor}</h2>
                 </div>
-
+                {this.level(this.props.zone.level)}
                 <Popup 
                     trigger={
                     <div className="location-button" alt=''>
