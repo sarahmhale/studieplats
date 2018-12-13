@@ -56,7 +56,7 @@ export default class BestMatch extends Component {
                 {this.createStars()}
 
                 <div className="best-info-container">
-                    <h3>Most seats available at</h3>
+                    <h1>Most seats available at</h1>
                     <h1>{this.props.zone.house}huset</h1>
                     <h2>Floor {this.props.zone.floor}</h2>
                     {this.level(this.props.zone.level)}
@@ -72,7 +72,18 @@ export default class BestMatch extends Component {
                 position={'top center'}
                 contentStyle={{width: window.innerWidth*0.75, height: window.innerHeight*0.75}}>
 
+<<<<<<< HEAD
                     <div style={{width:window.innerWidth*0.75, height: window.innerHeight*0.75}}>
+=======
+                <Popup
+                    trigger={
+                        <div className="location-button" alt=''>
+                            <p>Show me</p>
+                        </div>}
+                    position="center center"
+                    arrow={false}>
+                    <div style={{ width: '75vw', height: '25vh' }}>
+>>>>>>> a90a7695f36b0f0137474845d7e37b761356eab2
                         <Map center={[63.819740, 20.307033]}
                             zoom={16}>
                             <Overlay anchor={[63.819740, 20.307033]} offset={[0, 0]}>
@@ -82,7 +93,7 @@ export default class BestMatch extends Component {
                     </div>
                 </Popup>
 
-                <div className="image-cover"/>
+                <div className="image-cover" />
             </div>
         );
     }

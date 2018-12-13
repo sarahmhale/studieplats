@@ -9,7 +9,7 @@ export default class ZoneList extends Component {
             <div className="list-container">
                 {this.props.zones.map((zone, index) => {
                     if (index === 0) {
-                        return <div key={index} />;
+                        return <div className='list-header'><h3>Other seats</h3></div>;
                     } else {
                         return <ListItem
                             zone={zone}
