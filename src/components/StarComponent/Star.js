@@ -39,7 +39,11 @@ export default class StarComponent extends Component {
             this.setState({xpos: this.state.xpos+dx, ypos: this.state.ypos-dy});
         } else if (this.state.xpos < window.innerWidth/2){
             this.setState({xpos: this.state.xpos+dx, ypos: this.state.ypos+dy});
-        } else 
+        }
+
+        if(this.state.ypos <= window.innerHeight/2){
+            this.setState({ypos: window.innerHeight})
+        }
         // if (this.state.ypos <= window.innerHeight/2 || this.state.ypos >= window.innerHeight - this.state.size) {
         //     dy = -dy;
         // }
