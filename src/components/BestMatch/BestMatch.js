@@ -72,18 +72,7 @@ export default class BestMatch extends Component {
                 position={'top center'}
                 contentStyle={{width: window.innerWidth*0.75, height: window.innerHeight*0.75}}>
 
-<<<<<<< HEAD
                     <div style={{width:window.innerWidth*0.75, height: window.innerHeight*0.75}}>
-=======
-                <Popup
-                    trigger={
-                        <div className="location-button" alt=''>
-                            <p>Show me</p>
-                        </div>}
-                    position="center center"
-                    arrow={false}>
-                    <div style={{ width: '75vw', height: '25vh' }}>
->>>>>>> a90a7695f36b0f0137474845d7e37b761356eab2
                         <Map center={[63.819740, 20.307033]}
                             zoom={16}>
                             <Overlay anchor={[63.819740, 20.307033]} offset={[0, 0]}>
