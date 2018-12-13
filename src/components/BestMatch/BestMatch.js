@@ -10,10 +10,19 @@ import Overlay from 'pigeon-overlay';
 export default class BestMatch extends Component {
 
     constructor(props) {
-        super(props);
-        this.state = {
-            style: {},
-        }
+        super(props)
+        this.state = { open: false }
+        this.openModal = this.openModal.bind(this)
+        this.closeModal = this.closeModal.bind(this)
+    
+    }
+
+    openModal (){
+    this.setState({ open: true })
+    }
+
+    closeModal () {
+    this.setState({ open: false })
     }
 
     createStars = () => {
@@ -51,25 +60,19 @@ export default class BestMatch extends Component {
                     <h1>{this.props.zone.house}huset</h1>
                     <h2>Floor {this.props.zone.floor}</h2>
                     {this.level(this.props.zone.level)}
+                    <div className="location-button" alt='' onClick={this.openModal}>
+                        <p>Show me</p>
+                    </div>
                 </div>
-                {/* <Popup 
-                    trigger={
-                    <div className="location-button" alt=''>
-                        <p>Show me</p>
-                    </div>} 
-                    position="top center"
-                    overlayStyle={{borderRadius: '12px'}}>
-                        <img src={Map} alt="map" style={{height: '50%', width: '50%'}}/>
-                </Popup> */}
+                
+                <Popup
+                open={this.state.open}
+                closeOnDocumentClick
+                onClose={this.closeModal}
+                position={'top center'}
+                contentStyle={{width: window.innerWidth*0.75, height: window.innerHeight*0.75}}>
 
-                <Popup 
-                    trigger={
-                    <div className="location-button" alt=''>
-                        <p>Show me</p>
-                    </div>} 
-                    position="center center"
-                    arrow={false}>
-                    <div style={{width:'75vw', height: '25vh'}}>
+                    <div style={{width:window.innerWidth*0.75, height: window.innerHeight*0.75}}>
                         <Map center={[63.819740, 20.307033]}
                             zoom={16}>
                             <Overlay anchor={[63.819740, 20.307033]} offset={[0, 0]}>
@@ -77,7 +80,6 @@ export default class BestMatch extends Component {
                             </Overlay>
                         </Map>
                     </div>
-
                 </Popup>
 
                 <div className="image-cover"/>
