@@ -51,17 +51,19 @@
     -moz-animation: wave 12s infinite;
     background-size: 100% 100%;
     color: #fff;
+    padding-top: 30%;
+}
+
+.best-info-container h1, h2, h3{
+    margin-top: 0%; 
 }
 
 .best-container h3 {
-    margin-top: 20vh;
-    margin-bottom: 5vh;
     font-weight: lighter;
     font-size: 1.25em;
 }
 
 .best-container h2 {
-    margin-bottom: 10vh;
     font-size: 1.25em;
 }
 

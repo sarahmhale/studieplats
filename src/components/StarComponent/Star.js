@@ -9,7 +9,7 @@ export default class StarComponent extends Component {
             dy: 0.01 + Math.random()/5,
             size: 0.1 + this.getRandomInt(5),
             xpos: Math.floor(this.getRandomInt(window.innerWidth)),
-            ypos: (50 + window.innerHeight) - Math.floor(this.getRandomInt(window.innerHeight/3)),
+            ypos: (window.innerHeight) - Math.floor(this.getRandomInt(window.innerHeight/4)),
         }
     }
 
