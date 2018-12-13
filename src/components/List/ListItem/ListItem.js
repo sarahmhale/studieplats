@@ -10,7 +10,7 @@ export default class ListItem extends Component {
     return (
       <div className="list-item-container">
         <div className="title-container">
-          <div className="index-container"><p>{this.props.index}</p></div>
+          <div className="index-container"><p>{this.props.index+1}</p></div>
           <p>{this.props.zone.house}huset - Plan {this.props.zone.floor}</p>
         </div>
       </div>
