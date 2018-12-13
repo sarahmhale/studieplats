@@ -7,11 +7,26 @@
     border-radius: 6px;
     color: #fff;
     transition: 0.25s;
+    height: 7.5vh;
 }
 
 .list-item-container:hover{
     transform: scale(1.05);
     box-shadow: 0px 5px rgba(0,0,0,0.1);
+}
+
+.index-container{
+    background-color: #e3e3e3;
+    border-radius: 100%;
+    text-align: center;
+    color: #47A897;
+    width: 1.25em;
+    height: 1.25em;
+    margin-left: 5%;
+}
+
+.index-container p{
+    margin: 0%;
 }
 
 .title-container{
