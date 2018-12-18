@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './index.css';
-import Star from '../StarComponent/Star.js';
 //import Map from '../../Karta.png';
 import marker from '../../screen/marker.png'
 import Popup from "reactjs-popup";
@@ -25,15 +24,6 @@ export default class BestMatch extends Component {
     this.setState({ open: false })
     }
 
-    createStars = () => {
-        let stars = []
-
-        for (let j = 0; j < 50; j++) {
-            stars.push(<Star />)
-        }
-        return stars;
-    }
-
     level(level) {
         console.log(level)
         switch (level) {
@@ -53,8 +43,6 @@ export default class BestMatch extends Component {
     render() {
         return (
             <div className="best-container">
-                {this.createStars()}
-
                 <div className="best-info-container">
                     <h1>Most seats available at</h1>
                     <h1>{this.props.zone.house}huset</h1>

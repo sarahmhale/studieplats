@@ -18,11 +18,11 @@ export default class StarComponent extends Component {
     }
 
     componentDidMount() {
-       setInterval( () => this.updatePosition(), 10);
+       //setInterval( () => this.updatePosition(), 10);
     }
 
     componentWillUnmount(){
-        clearInterval(this.userComponentId);
+        //clearInterval(this.userComponentId);
     }
 
     updatePosition() {

@@ -18,6 +18,7 @@
     flex-direction: 'row';
     flex-wrap: nowrap;
     transition: 0.25s;
+    z-index: 99;
 }
 
 .location-button:hover{
@@ -44,14 +45,9 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    background-color: #145386;
-    background: linear-gradient(0deg, rgba(0, 204, 141, 0.5), rgba(1, 18, 44, 1));
-    animation: wave 12s infinite;
-    -webkit-animation: wave 12s infinite;
-    -moz-animation: wave 12s infinite;
-    background-size: 100% 100%;
     color: #fff;
     padding-top: 30%;
+    z-index: 1;
 }
 
 .best-info-container h1, h2, h3{
@@ -72,24 +68,6 @@
     font-size: 1.5em;
 }
 
-@keyframes wave{
-    0%{background-position:50% 0%}
-    50%{background-position:50% 100%}
-    100%{background-position:50% 0%}
-}
-
-@-webkit-keyframes wave {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-@-moz-keyframes wave {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 .image-cover{
     height: 0px;
     width: 0px;
@@ -98,5 +76,6 @@
     border-left: 0; 
     border-bottom: 0; 
     border-top: 25vw solid transparent;
-    z-index: 1;
+    z-index: 2;
+    position: relative;
 }
