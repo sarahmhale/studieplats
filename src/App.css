@@ -1,9 +1,10 @@
 .App {
   height: 100%;
   width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   flex-direction: row;
-  padding: 0px;
-
   background-color: #145386;
   background: linear-gradient(0deg, rgba(0, 204, 141, 0.5), rgba(1, 18, 44, 1));
   animation: wave 12s infinite;
@@ -15,10 +16,12 @@
 }
 
 .stars-container{
-  z-index: 0;
-  position: absolute;
+  z-index: -1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 @keyframes wave{

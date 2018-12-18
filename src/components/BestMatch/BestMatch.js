@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
-//import Map from '../../Karta.png';
-import marker from '../../screen/marker.png'
-import Popup from "reactjs-popup";
-import Map from 'pigeon-maps'
-import Overlay from 'pigeon-overlay';
+import chair from '../../chair.png';
+import marker from '../../Plats.png';
 
 export default class BestMatch extends Component {
 
@@ -43,35 +40,19 @@ export default class BestMatch extends Component {
     render() {
         return (
             <div className="best-container">
-                <div className="best-info-container">
-                    <h1>Most seats available at</h1>
-                    <h1>{this.props.zone.house}huset</h1>
-                    <h2>Floor {this.props.zone.floor}</h2>
-                    {this.level(this.props.zone.level)}
-                    {/* <div className="location-button" alt='' onClick={this.openModal}>
-                        <p>Show me</p>
-                    </div> */}
+                <h2>Best chance is at:</h2>
+                <img className="best-image" src={chair} alt='seat'/>
+                <h1>{this.props.zone.house}huset</h1>
+                <h3>Floor {this.props.zone.floor}</h3>
+                {/* {this.level(this.props.zone.level)} */}
+                <div className="location-button">
+                    <span>
+                    
+                    <p>
+                    <img className="location-icon" src={marker} alt='location'/>
+                    Take me there</p></span>
                 </div>
-                
-                <Popup
-                open={this.state.open}
-                closeOnDocumentClick
-                onClose={this.closeModal}
-                position={'top center'}
-                contentStyle={{width: window.innerWidth*0.75, height: window.innerHeight*0.75}}>
-
-                    <div style={{width:window.innerWidth*0.75, height: window.innerHeight*0.75}}>
-                        <Map center={[63.819740, 20.307033]}
-                            zoom={16}>
-                            <Overlay anchor={[63.819740, 20.307033]} offset={[0, 0]}>
-                                <img src={marker} width={24} height={30} alt='' />
-                            </Overlay>
-                        </Map>
-                    </div>
-                </Popup>
-
-                {/* <div className="image-cover" /> */}
-            </div>
+´            </div>
         );
     }
 }
