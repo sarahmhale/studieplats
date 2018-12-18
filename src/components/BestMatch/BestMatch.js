@@ -48,9 +48,9 @@ export default class BestMatch extends Component {
                     <h1>{this.props.zone.house}huset</h1>
                     <h2>Floor {this.props.zone.floor}</h2>
                     {this.level(this.props.zone.level)}
-                    <div className="location-button" alt='' onClick={this.openModal}>
+                    {/* <div className="location-button" alt='' onClick={this.openModal}>
                         <p>Show me</p>
-                    </div>
+                    </div> */}
                 </div>
                 
                 <Popup
@@ -70,7 +70,7 @@ export default class BestMatch extends Component {
                     </div>
                 </Popup>
 
-                <div className="image-cover" />
+                {/* <div className="image-cover" /> */}
             </div>
         );
     }

@@ -1,15 +1,55 @@
 .list-container{
   flex: 2;
-  width: 100vw;
+  width: 90vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-content: flex-start;
-  background-color: #145386;
-  height: 60vh;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .list-header{
-  margin: 0vh 0vh 0vh 5vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #2262A0;
+  width: 100%;
+}
+
+.list-item-border{
+  height:0.15vh;
+  width: 100%;
+  background-color: #2262A0;
+}
+
+.list-header h3{
+  color: #2262A0;
+  margin: 5vh auto 0 auto;
+}
+
+.legend-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
+}
+
+.value-container{
+  align-content: center;
+  justify-content: center;
+}
+
+.value-color{
+  border-radius: 100%;
+  background-color: #000;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 5%;
+  display: inline-block;
 }
