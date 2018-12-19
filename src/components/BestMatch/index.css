@@ -39,13 +39,14 @@
 
 .location-button{
     background-color: #fff;
-    border: 0.1em solid #2262A0;
+    border: 0.15em solid #2262A0;
     border-radius: 20px;
-    width: 45vw;
+    width: 30vw;
     display: inline-block;
-    margin-top: 5vh;
+    padding-top: 10px;
+    padding-bottom:10px;
     margin-bottom: 5vh;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 .location-button:hover{

@@ -37,6 +37,11 @@ export default class BestMatch extends Component {
         }
     }
 
+    openMaps() {
+        console.log("maos")
+        const url = 'https://www.google.com/maps/place/Naturvetarhuset,+Universitetsv%C3%A4gen,+901+87+Ume%C3%A5/@63.8195457,20.3056102,17z/data=!3m1!4b1!4m5!3m4!1s0x467c5afc66554fbd:0xd9481094b451062!8m2!3d63.8195433!4d20.3077989';
+        window.open(url, '_blank');
+    }
     render() {
         return (
             <div className="best-container">
@@ -45,14 +50,12 @@ export default class BestMatch extends Component {
                 <h1>{this.props.zone.house}huset</h1>
                 <h3>Floor {this.props.zone.floor}</h3>
                 {/* {this.level(this.props.zone.level)} */}
-                <div className="location-button">
-                    <span>
-
-                        <p>
-                            <img className="location-icon" src={marker} alt='location' />
-                            Take me there</p></span>
-                </div>
-                ´            </div>
+                <button
+                    className="location-button"
+                    onClick={this.openMaps}>
+                    Take me there
+                </button>
+            </div>
         );
     }
 }
