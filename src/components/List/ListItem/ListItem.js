@@ -39,7 +39,7 @@ export default class ListItem extends Component {
         <span className="title-container">
           <span className="index-container"><p>{this.props.index + 1}</p></span>
           <p style={{ flex: 4 }}>{this.props.zone.house}huset</p>
-          <p style={{ flex: 2, marginLeft: 0 }}> - Plan {this.props.zone.floor}</p>
+          <p style={{ flex: 2, marginLeft: 0 }}> Plan {this.props.zone.floor}</p>
           <span className="value-color" style={{ backgroundColor: this.state.color }} />
         </span>
       </div>

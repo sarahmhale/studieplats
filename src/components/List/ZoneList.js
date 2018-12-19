@@ -17,7 +17,7 @@ export default class ZoneList extends Component {
         return (
             <div className="list-container">
                 <div className='list-header'>
-                    <h3>Other seats:</h3>
+                    <h3>All areas</h3>
                     <div className="legend-container">
                         {this.get_blob('calm', '#4BB9EC')}
                         {this.get_blob('moderate', '#FFDC81')}

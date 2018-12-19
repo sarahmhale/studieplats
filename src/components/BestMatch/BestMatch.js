@@ -43,7 +43,7 @@ export default class BestMatch extends Component {
     render() {
         return (
             <div className="best-container">
-                <h2>Best chance is at:</h2>
+                <h2>Best chance of FREE SEAT</h2>
                 <img className="best-image" src={chair} alt='seat' />
                 <h1>{this.props.zone.house}huset</h1>
                 <h3>Floor {this.props.zone.floor}</h3>
