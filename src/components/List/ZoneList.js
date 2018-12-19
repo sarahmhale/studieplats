@@ -3,6 +3,15 @@ import ListItem from './ListItem/ListItem.js';
 import './index.css';
 
 export default class ZoneList extends Component {
+
+    get_blob(name, color) {
+        return (
+            <div className="value-container">
+                <div className='value-color value-item' style={{ backgroundColor: color }} />
+                <p className='value-item'>{name}</p>
+            </div>
+        )
+    }
     render() {
         console.log(this.props)
         return (
@@ -10,32 +19,21 @@ export default class ZoneList extends Component {
                 <div className='list-header'>
                     <h3>Other seats:</h3>
                     <div className="legend-container">
-                        <span className="value-container">
-                            <p>
-                            <span className='value-color' style={{backgroundColor: '#4BB9EC'}}/>
-                            calm</p>
-                        </span>
-                        <span className="value-container">
-                            <p>
-                            <span className='value-color' style={{backgroundColor: '#FFDC81'}}/>
-                            moderate</p>
-                        </span>
-                        <span className="value-container">
-                            <p>
-                            <span className='value-color' style={{backgroundColor: '#FF4F19'}}/>
-                            busy</p>
-                        </span>
+                        {this.get_blob('calm', '#4BB9EC')}
+                        {this.get_blob('moderate', '#FFDC81')}
+                        {this.get_blob('busy', '#FF4F19')}
+
                     </div>
                 </div>
                 {this.props.zones.map((zone, index) => {
-                        return <div>
-                            <ListItem
-                                zone={zone}
-                                key={index}
-                                index={index}
-                            />
-                            <div className="list-item-border"/>
-                        </div>;
+                    return <div>
+                        <ListItem
+                            zone={zone}
+                            key={index}
+                            index={index}
+                        />
+                        <div className="list-item-border" />
+                    </div>;
                 })}
             </div>
         );
