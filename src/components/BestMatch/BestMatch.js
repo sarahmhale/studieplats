@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
-import chair from '../../chair.png';
+import chair from '../../desk.svg';
 import marker from '../../Plats.png';
 
 export default class BestMatch extends Component {
@@ -10,15 +10,15 @@ export default class BestMatch extends Component {
         this.state = { open: false }
         this.openModal = this.openModal.bind(this)
         this.closeModal = this.closeModal.bind(this)
-    
+
     }
 
-    openModal (){
-    this.setState({ open: true })
+    openModal() {
+        this.setState({ open: true })
     }
 
-    closeModal () {
-    this.setState({ open: false })
+    closeModal() {
+        this.setState({ open: false })
     }
 
     level(level) {
@@ -41,18 +41,18 @@ export default class BestMatch extends Component {
         return (
             <div className="best-container">
                 <h2>Best chance is at:</h2>
-                <img className="best-image" src={chair} alt='seat'/>
+                <img className="best-image" src={chair} alt='seat' />
                 <h1>{this.props.zone.house}huset</h1>
                 <h3>Floor {this.props.zone.floor}</h3>
                 {/* {this.level(this.props.zone.level)} */}
                 <div className="location-button">
                     <span>
-                    
-                    <p>
-                    <img className="location-icon" src={marker} alt='location'/>
-                    Take me there</p></span>
+
+                        <p>
+                            <img className="location-icon" src={marker} alt='location' />
+                            Take me there</p></span>
                 </div>
-´            </div>
+                ´            </div>
         );
     }
 }
