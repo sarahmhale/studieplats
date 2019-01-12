@@ -47,7 +47,6 @@ export default class BestMatch extends Component {
                 {/* {this.level(this.props.zone.level)} */}
                 <div className="location-button">
                     <span>
-                    
                     <p>
                     <img className="location-icon" src={marker} alt='location'/>
                     Take me there</p></span>

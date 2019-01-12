@@ -10,7 +10,7 @@
 
 .index-container{
     border-radius: 100%;
-    text-align: center;
+    text-align: left;
     color: #fff;
     background-color: #2262A0;
     width: 2em;
@@ -33,26 +33,11 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    flex: 4;
 }
 
 .title-container p{
     flex: 10;
     font-size: 1em;
-    margin-left: 5%;
-}
-
-.location-image-small{
-    flex: 1;
-    justify-self: right;
-    margin: auto 5% auto auto;
-    height: 75%;
-}
-
-.list-item-expand{
-    height: 0vh;
-    width: 100%;
-    font-size: 0em;
-    background: #c4c4c4;
-    transition: 1s;
-    border-radius: 12px;
+    margin-left: 5vw;
 }

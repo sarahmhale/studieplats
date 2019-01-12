@@ -13,7 +13,6 @@ const Zones = ({ data: { loading, error, zones } }) => {
     } else {
         return (
             <div>
-                <BestMatch zone={zones[0]} />
                 <ZoneList zones={zones} />
             </div>
         );

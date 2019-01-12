@@ -4,21 +4,16 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: flex-start;
   background-color: #fff;
-  margin: auto;
+  margin: 5vh auto 5vh auto;
   border-radius: 20px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 .list-header{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  text-align: left;
   color: #2262A0;
-  width: 100%;
 }
 
 .list-item-border{
@@ -29,15 +24,19 @@
 
 .list-header h3{
   color: #2262A0;
-  margin: 5vh auto 0 auto;
+  margin-left: 5vw;
+  font-size: 1.5em;
+  margin-top: 2.5vh;
 }
 
 .legend-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: 0.75em;
+  position: absolute;
+  top: 10vh;
 }
 
 .value-container{
@@ -50,6 +49,6 @@
   background-color: #000;
   width: 0.5em;
   height: 0.5em;
-  margin-right: 5%;
+  margin-left: 5vw;
   display: inline-block;
 }
