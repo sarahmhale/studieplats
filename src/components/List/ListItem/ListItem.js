@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './index.css';
-import { throwServerError } from 'apollo-link-http-common';
+
 
 export default class ListItem extends Component {
-  
-  constructor(props){
+
+  constructor(props) {
     super(props);
     this.state = {
       color: 'red',
@@ -56,6 +56,7 @@ export default class ListItem extends Component {
           <span className="value-color" style={{backgroundColor: this.state.color}}/>
           {this.titleBox(this.props.index)}
         </span>
+
       </div>
     );
   }

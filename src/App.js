@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Zones from './screen/Zones.js';
-import Demo from './screen/Map'
 import Star from './components/StarComponent/Star.js';
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
     let stars = []
 
     for (let j = 0; j < 50; j++) {
-        stars.push(<Star />)
+      stars.push(<Star />)
     }
     return stars;
   }
@@ -18,9 +17,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Demo /> */}
         <div className="stars-container">
-            {this.createStars()}
+          {this.createStars()}
         </div>
         <Zones />
       </div>

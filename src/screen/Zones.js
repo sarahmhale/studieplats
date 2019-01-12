@@ -2,7 +2,6 @@ import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import React from 'react';
 import ZoneList from '../components/List/ZoneList'
-import BestMatch from '../components/BestMatch/BestMatch'
 
 
 const Zones = ({ data: { loading, error, zones } }) => {
